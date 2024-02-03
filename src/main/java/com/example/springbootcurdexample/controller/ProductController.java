@@ -20,7 +20,9 @@ public class ProductController {
 
     @PostMapping("/addProducts")
     public List<Product> addProducts(@RequestBody List<Product> products){
+        System.out.println("success");
         return productService.saveProducts(products);
+
     }
 
     @GetMapping("/products")
